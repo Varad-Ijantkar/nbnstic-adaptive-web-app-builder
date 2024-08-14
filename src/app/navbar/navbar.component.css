@@ -1,0 +1,75 @@
+.nav_bar .main_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px 1px 40px;
+    font-weight: 100;
+}
+
+.nav_bar .main_container .end_block .nav_bar_end_list li a .user_svg,
+.nav_bar .main_container .end_block .nav_bar_end_list li a .search_svg {
+    width: 20px;
+}
+
+.nav_bar .main_container .start_block .nav_bar_start_list .logo .logo_img {
+    width: 200px;
+}
+
+.nav_bar .main_container .start_block .nav_bar_start_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: last baseline;
+    gap: 30px;
+    list-style: none;
+    font-size: 20px;
+    /* background-color: red; */
+}
+
+.nav_bar .main_container .start_block .nav_bar_start_list .nav_element button {
+    /* text-decoration: none; */
+    color: var(--primary-text-color);
+    font-weight: 400;
+    background-color: var(--primary-white-color);
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    position: relative;
+    font-size: 17px;
+}
+
+.nav_bar .main_container .start_block .nav_bar_start_list .nav_element,
+.nav_bar .main_container .end_block .nav_bar_end_list .nav_element {
+    position: relative;
+    padding-top: 7px;
+    height: 40px;
+}
+
+.nav_bar .main_container .start_block .nav_bar_start_list .nav_element:hover .bottom_color,
+.nav_bar .main_container .end_block .nav_bar_end_list .nav_element:hover .bottom_color {
+    opacity: 1;
+}
+
+
+.nav_bar .main_container .start_block .nav_bar_start_list .nav_element .bottom_color,
+.nav_bar .main_container .end_block .nav_bar_end_list .nav_element .bottom_color {
+    height: 5px;
+    background-color: var(--highlight-blue);
+    /* background-color: black; */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+
+/* added */
+
+.nav_bar .main_container .end_block .nav_bar_end_list {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    gap: 25px;
+}

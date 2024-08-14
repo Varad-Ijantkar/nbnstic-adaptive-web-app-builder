@@ -1,0 +1,65 @@
+.head_bar .main_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    font-weight: 100;
+}
+
+.head_bar .main_container .start_block .language_button {
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+.head_bar .main_container .start_block .language_button:hover .text {
+    color: var(--highlight-blue);
+    text-decoration: underline;
+}
+
+.head_bar .main_container .start_block .language_button span .globe {
+    width: 15px;
+}
+
+.head_bar .main_container .start_block .language_button span .down_arrow,
+.head_bar .main_container .end_block .quick_links .quick_link_element .down_arrow {
+    width: 20px;
+}
+
+.head_bar .main_container .end_block .quick_links {
+    /* .nav_bar .main_container .end_block .nav_bar_end_list { */
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    gap: 25px;
+}
+
+.head_bar .main_container .end_block .quick_links .quick_link_element a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+}
+
+.head_bar .main_container .end_block .quick_links .quick_link_element:hover a {
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    color: var(--highlight-blue);
+}
+
+.head_bar .main_container .end_block .quick_links .quick_link_element .resources_element {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5px;
+}
+
+.division {
+    height: 1px;
+    width: 100%;
+    background-color: #E5E6E9;
+}
