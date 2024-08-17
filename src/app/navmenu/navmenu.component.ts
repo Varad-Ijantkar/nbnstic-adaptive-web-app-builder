@@ -2,15 +2,21 @@ import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'app-navmenu',
   standalone: true,
   imports: [CommonModule],
-  templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  templateUrl: './navmenu.component.html',
+  styleUrl: './navmenu.component.css'
 })
-export class NavbarComponent {
-  // added : 
+export class NavmenuComponent {
   isRotated = false;
+  isMenuOpen = false;
+
+  toggleMenu() {
+    this.isMenuOpen = !this.isMenuOpen;
+  }
+
+  // added : 
 
   constructor() {
     // Set default theme to light
@@ -28,7 +34,7 @@ export class NavbarComponent {
       localStorage.setItem('theme', 'dark')
     }
 
-    // Toggle Rotation
+    // Toggle rotation
     this.isRotated = !this.isRotated;
   }
 }

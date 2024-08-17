@@ -1,0 +1,194 @@
+.navmenu {
+    background-color: gray;
+}
+
+.navmenu .main_container {
+    background-color: pink;
+    height: 60px;
+    padding: 5px 30px 5px 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+}
+
+.navmenu .main_container .start_block .logo_element .logo {
+    width: 190px;
+}
+
+.navmenu .main_container .end_block .list {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    list-style: none;
+    height: 100%;
+}
+
+.navmenu .main_container .end_block .list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navmenu .main_container .end_block .list .menu_holder .menu_button {
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.navmenu .main_container .end_block .list .menu_holder .menu_button .menu_button_element {
+    background-color: var(--brand-color);
+    height: 35px;
+    aspect-ratio: 1/1;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+}
+
+.navmenu .main_container .end_block .list .menu_holder .menu_button .menu_button_element .line {
+    background-color: var(--primary-white-color);
+    background-color: pink;
+    width: 60%;
+    height: 4px;
+    border-radius: 3px;
+}
+
+.navmenu .main_container .end_block .list .buttons {
+    background-color: pink;
+    border: none;
+}
+
+.navmenu .main_container .end_block .list .profile .buttons .profile_svg {
+    width: 30px;
+}
+
+.navmenu .main_container .end_block .list .theme .buttons .theme_svg {
+    width: 29px;
+}
+
+.navmenu .main_container .end_block .list .search .buttons .search_svg {
+    width: 20px;
+}
+
+/* ======================== Menu ========================== */
+
+.navmenu .main_container .end_block .list .menu_holder .menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: pink;
+    width: 100vw;
+    padding: 15px 30px 15px 30px;
+    box-sizing: border-box;
+    font-size: 19px;
+}
+
+.navmenu .main_container .end_block .list .menu_holder .menu.open {
+    display: flex;
+}
+
+.navmenu .main_container .end_block .list .menu_holder .menu ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.navmenu .main_container .end_block .list .menu_holder .menu ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+}
+
+.navmenu .main_container .end_block .list .menu_holder .menu ul li a {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    transition: transform 0.1s ease-in-out;
+
+    &:hover {
+        transform: scale(1.2);
+    }
+}
+
+.navmenu .main_container .end_block .list .menu_holder .menu ul li .right_arrow_svg {
+    width: 15px;
+}
+
+.navmenu .main_container .end_block .list .menu_holder .menu ul .division {
+    background-color: black;
+    height: 1px;
+    width: 100%;
+    margin: 9px 0px 9px 0px;
+}
+
+.rotate {
+    transition: transform 0.9s ease;
+}
+
+.rotate.rotated {
+    transform: rotate(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+/* ============================== MEDIA QUERIES =================== */
+
+@media screen and (min-width:1000px) {
+    .navmenu {
+        display: none;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    .navmenu .main_container {
+        padding: 5px 20px 5px 20px;
+    }
+
+    .navmenu .main_container .start_block .logo_element .logo {
+        width: 150px;
+    }
+
+    .navmenu .main_container .end_block .list {
+        gap: 5px;
+    }
+
+    .navmenu .main_container .end_block .list .menu_holder .menu_button .menu_button_element {
+        height: 30px;
+        gap: 3px;
+    }
+
+    .navmenu .main_container .end_block .list .menu_holder .menu_button .menu_button_element .line {
+        height: 3px;
+    }
+
+    .navmenu .main_container .end_block .list .profile .buttons .profile_svg {
+        width: 30px;
+    }
+
+    .navmenu .main_container .end_block .list .theme .buttons .theme_svg {
+        width: 29px;
+    }
+
+    .navmenu .main_container .end_block .list .search .buttons .search_svg {
+        width: 20px;
+    }
+}

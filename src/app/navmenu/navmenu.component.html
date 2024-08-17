@@ -1,0 +1,124 @@
+<section class="navmenu">
+    <div class="main_container">
+        <div class="start_block">
+            <div class="logo_element">
+                <img class="logo" src="assets/images/RA_logo.png" alt="Rockwell Automation Logo">
+            </div>
+        </div>
+        <div class="end_block">
+            <ul class="list">
+                <li class="menu_holder">
+                    <button class="menu_button" (click)="toggleMenu()"> 
+                        <div class="menu_button_element">
+                            <div class="line"></div>
+                            <div class="line"></div>
+                            <div class="line"></div>
+                        </div>
+                    </button>
+                    <div class="menu" [class.open]="isMenuOpen">
+                        <ul>
+                            <li>
+                                <a href="">Lorem 1</a>
+                                <img class="right_arrow_svg right_arrow_svg_01" src="assets/svg/right_arrow_svg.svg"
+                                    alt="Right arrow svg">
+                            </li>
+                            <div class="division"></div>
+                            <li>
+                                <a href="">Lorem 2</a>
+                                <img class="right_arrow_svg right_arrow_svg_02" src="assets/svg/right_arrow_svg.svg"
+                                    alt="Right arrow svg">
+                            </li>
+                            <div class="division"></div>
+                            <li>
+                                <a href="">Lorem 3</a>
+                                <img class="right_arrow_svg right_arrow_svg_03" src="assets/svg/right_arrow_svg.svg"
+                                    alt="Right arrow svg">
+                            </li>
+                            <div class="division"></div>
+                            <li>
+                                <a href="">Lorem 4</a>
+                                <img class="right_arrow_svg right_arrow_svg_04" src="assets/svg/right_arrow_svg.svg"
+                                    alt="Right arrow svg">
+                            </li>
+                            <div class="division"></div>
+                            <li>
+                                <a href="">Lorem 5</a>
+                                <img class="right_arrow_svg right_arrow_svg_05" src="assets/svg/right_arrow_svg.svg"
+                                    alt="Right arrow svg">
+                            </li>
+                            <div class="division"></div>
+                            <li>
+                                <a href="">Lorem 6</a>
+                                <img class="right_arrow_svg right_arrow_svg_06" src="assets/svg/right_arrow_svg.svg"
+                                    alt="Right arrow svg">
+                            </li>
+                            <div class="division"></div>
+                            <li>
+                                <a href="">Lorem 7</a>
+                                <img class="right_arrow_svg right_arrow_svg_07" src="assets/svg/right_arrow_svg.svg"
+                                    alt="Right arrow svg">
+                            </li>
+                            <div class="division"></div>
+                            <li>
+                                <a href="">Lorem 8</a>
+                                <img class="right_arrow_svg right_arrow_svg_08" src="assets/svg/right_arrow_svg.svg"
+                                    alt="Right arrow svg">
+                            </li>
+                            <div class="division"></div>
+                            <li>
+                                <a href="">Lorem 9</a>
+                                <img class="right_arrow_svg right_arrow_svg_09" src="assets/svg/right_arrow_svg.svg"
+                                    alt="Right arrow svg">
+                            </li>
+                            <div class="division"></div>
+                            <li>
+                                <a href="">Lorem 10</a>
+                                <img class="right_arrow_svg right_arrow_svg_10" src="assets/svg/right_arrow_svg.svg"
+                                    alt="Right arrow svg">
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="profile">
+                    <button class="buttons">
+                        <img class="svgs profile_svg" src="assets/svg/profile.svg" alt="Profile svg">
+                    </button>
+                </li>
+                <li class="theme">
+                    <button class="buttons" id="theme_toggle" (click)="toggle_theme()">
+                        <img class="svgs theme_svg rotate" src="assets/svg/theme.svg" alt="Theme svg"
+                            [ngClass]="{'rotated':isRotated}">
+                    </button>
+                </li>
+                <li class="search">
+                    <button class="buttons">
+                        <img class="svgs search_svg" src="assets/svg/search.svg" alt="Search svg">
+                    </button>
+                </li>
+            </ul>
+        </div>
+        <!-- <div class="menu" [ngClass]="{'open': isMenuOpen}">
+            <ul>
+                <li><a href="">Lorem 1</a></li>
+                <div class="division"></div>
+                <li><a href="">Lorem 2</a></li>
+                <div class="division"></div>
+                <li><a href="">Lorem 3</a></li>
+                <div class="division"></div>
+                <li><a href="">Lorem 4</a></li>
+                <div class="division"></div>
+                <li><a href="">Lorem 5</a></li>
+                <div class="division"></div>
+                <li><a href="">Lorem 6</a></li>
+                <div class="division"></div>
+                <li><a href="">Lorem 7</a></li>
+                <div class="division"></div>
+                <li><a href="">Lorem 8</a></li>
+                <div class="division"></div>
+                <li><a href="">Lorem 9</a></li>
+                <div class="division"></div>
+                <li><a href="">Lorem 10</a></li>
+            </ul>
+        </div> -->
+    </div>
+</section>
