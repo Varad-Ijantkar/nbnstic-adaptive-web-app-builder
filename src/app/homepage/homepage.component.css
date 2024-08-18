@@ -1,5 +1,5 @@
 .homepage {
-    background-color: var(--background-color);
+    background-color: var(--homepage-background-color);
     padding: 50px;
     box-sizing: border-box;
 }
@@ -14,13 +14,13 @@
 .homepage .main_container .element {
     height: 35vh;
     width: 90vw;
-    background-color: white;
+    background-color: var(--homepage-block-background-color);
     border-radius: 15px;
     transition: all 0.25s ease-in-out;
     cursor: pointer;
 
     &:hover {
         transform: scale(1.015);
-        background-color: var(--tile-highlight-color);
+        background-color: var(--homepage-block-hover-background-color);
     }
 }

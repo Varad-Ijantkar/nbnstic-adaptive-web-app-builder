@@ -1,4 +1,5 @@
 .head_bar .main_container {
+    background-color: var(--head-bar-background-color);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -8,7 +9,7 @@
 }
 
 .head_bar .main_container .start_block .language_button {
-    background-color: white;
+    background-color: var(--head-bar-background-color);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -18,8 +19,16 @@
     border: none;
 
     &:hover .text {
-        color: var(--highlight-blue);
+        color: var(--head-bar-text-highlight-color);
         text-decoration: underline;
+    }
+
+    &:hover .globe {
+        fill: var(--head-bar-text-highlight-color);
+    }
+
+    &:hover .down_arrow {
+        fill: var(--head-bar-text-highlight-color);
     }
 }
 
@@ -41,13 +50,13 @@
 
 .head_bar .main_container .end_block .quick_links .quick_link_element a {
     text-decoration: none;
-    color: var(--primary-text-color);
+    color: var(--head-bar-text-color);
 }
 
 .head_bar .main_container .end_block .quick_links .quick_link_element:hover a {
     text-decoration: underline;
     text-decoration-thickness: 1px;
-    color: var(--highlight-blue);
+    color: var(--head-bar-text-highlight-color);
 }
 
 .head_bar .main_container .end_block .quick_links .quick_link_element .resources_element {
@@ -61,6 +70,10 @@
     height: 1px;
     width: 100%;
     background-color: #E5E6E9;
+}
+
+.head_bar .main_container .start_block .language_button .text {
+    color: var(--head-bar-text-color);
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1300px) {

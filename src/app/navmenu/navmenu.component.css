@@ -1,9 +1,13 @@
 .navmenu {
-    background-color: gray;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 20;
 }
 
 .navmenu .main_container {
-    background-color: pink;
+    background-color: var(--nav-bar-background-color);
     height: 60px;
     padding: 5px 30px 5px 30px;
     box-sizing: border-box;
@@ -13,6 +17,8 @@
     align-items: center;
 
     position: relative;
+    box-shadow: 0px 10px 20px 0px var(--nav-menu-shadow-color);
+    
 }
 
 .navmenu .main_container .start_block .logo_element .logo {
@@ -24,7 +30,7 @@
     flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 9px;
     list-style: none;
     height: 100%;
 }
@@ -38,11 +44,11 @@
 .navmenu .main_container .end_block .list .menu_holder .menu_button {
     border: none;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 7px;
 }
 
 .navmenu .main_container .end_block .list .menu_holder .menu_button .menu_button_element {
-    background-color: var(--brand-color);
+    background-color: var(--nav-bar-text-color);
     height: 35px;
     aspect-ratio: 1/1;
     border-radius: 5px;
@@ -54,28 +60,32 @@
 }
 
 .navmenu .main_container .end_block .list .menu_holder .menu_button .menu_button_element .line {
-    background-color: var(--primary-white-color);
-    background-color: pink;
+    background-color: var(--nav-bar-background-color);
     width: 60%;
     height: 4px;
     border-radius: 3px;
 }
 
 .navmenu .main_container .end_block .list .buttons {
-    background-color: pink;
+    background-color: var(--nav-bar-background-color);
     border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    aspect-ratio: 1/1;
 }
 
 .navmenu .main_container .end_block .list .profile .buttons .profile_svg {
-    width: 30px;
+    width: 35px;
 }
 
 .navmenu .main_container .end_block .list .theme .buttons .theme_svg {
-    width: 29px;
+    width: 24px;
 }
 
 .navmenu .main_container .end_block .list .search .buttons .search_svg {
-    width: 20px;
+    width: 23px;
 }
 
 /* ======================== Menu ========================== */
@@ -85,7 +95,7 @@
     position: absolute;
     top: 60px;
     left: 0;
-    background-color: pink;
+    background-color: var(--nav-bar-background-color);
     width: 100vw;
     padding: 15px 30px 15px 30px;
     box-sizing: border-box;
@@ -108,12 +118,17 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    padding: 10px 10px 10px 10px;
     cursor: pointer;
+
+    &:hover {
+        background-color: var(--nav-bar-menu-element-hover-color);
+    }
 }
 
 .navmenu .main_container .end_block .list .menu_holder .menu ul li a {
     text-decoration: none;
-    color: var(--primary-text-color);
+    color: var(--nav-bar-text-color);
     transition: transform 0.1s ease-in-out;
 
     &:hover {
@@ -126,10 +141,10 @@
 }
 
 .navmenu .main_container .end_block .list .menu_holder .menu ul .division {
-    background-color: black;
+    background-color: var(--nav-bar-division-color);
     height: 1px;
     width: 100%;
-    margin: 9px 0px 9px 0px;
+    /* margin: 9px 0px 9px 0px; */
 }
 
 .rotate {
@@ -185,10 +200,14 @@
     }
 
     .navmenu .main_container .end_block .list .theme .buttons .theme_svg {
-        width: 29px;
+        width: 20px;
     }
 
     .navmenu .main_container .end_block .list .search .buttons .search_svg {
-        width: 20px;
+        width: 19px;
+    }
+
+    .navmenu .main_container .end_block .list {
+        gap: 1px;
     }
 }

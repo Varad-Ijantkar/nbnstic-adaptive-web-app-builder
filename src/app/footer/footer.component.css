@@ -56,7 +56,7 @@
 .footer .main_container .sub_section_02 ul li {
     &:hover {
         text-decoration: underline;
-        color: var(--highlight-blue);
+        color: var(--footer-text-highlight-color);
     }
 }
 
@@ -76,6 +76,7 @@
 
     &:hover {
         text-decoration: underline;
+        color: var(--footer-text-highlight-color);
     }
 }
 
