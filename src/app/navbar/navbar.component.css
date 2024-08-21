@@ -4,6 +4,15 @@
     left: 0;
     right: 0;
     z-index: 20;
+    /* background-color: transparent;
+    filter: blur(1px); */
+}
+.nav_bar .blurred_background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
 }
 
 .nav_bar .main_container {
