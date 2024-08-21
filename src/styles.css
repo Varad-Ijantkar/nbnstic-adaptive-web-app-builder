@@ -33,13 +33,13 @@ body {
     /* ========== FINAL ========== */
 
     /* headbar */
-    --head-bar-background-color: #f2f2f2;
+    --head-bar-background-color: #f3f3f3;
     --head-bar-text-highlight-color: #2A79C4;
     --head-bar-text-color: #000000;
 
     /* navbar */
     --nav-bar-background-color: #e7e7e7;
-    --nav-bar-background-color: #F6E6E7;
+    --nav-bar-background-color: #f3f3f3;
     --nav-bar-shadow-color: #6c6c6c;
     --nav-bar-bottom-box-color: #2A79C4;
     --nav-bar-text-color: #212121;
@@ -48,11 +48,9 @@ body {
 
     /* homepage */
     --homepage-background-color: #FFFFFF;
-    --homepage-background-color: #8ADAF1;
-    --homepage-block-background-color: #929292;
-    --homepage-block-background-color: #F4F1DE;
-    --homepage-block-hover-background-color: #6f6f6f;
-    --homepage-block-hover-background-color: #9d9a9a;
+    /* --homepage-background-color: #8ADAF1; */
+    --homepage-block-background-color: #8aa6ce;
+    --homepage-block-hover-background-color: #536b8f;
 
     /* footer */
     --footer-background-color: #f1f1f1;
