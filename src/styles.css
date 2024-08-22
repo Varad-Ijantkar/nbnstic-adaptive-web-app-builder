@@ -48,9 +48,11 @@ body {
 
     /* homepage */
     --homepage-background-color: #FFFFFF;
-    /* --homepage-background-color: #8ADAF1; */
+    --homepage-background-color: #8ADAF1;
     --homepage-block-background-color: #8aa6ce;
+    --homepage-block-background-color: #ededed;
     --homepage-block-hover-background-color: #536b8f;
+    --homepage-block-hover-background-color: #7497cc;
 
     /* footer */
     --footer-background-color: #f1f1f1;
