@@ -6,7 +6,8 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.css'
+  // styleUrl: './navbar.component.css'
+  styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
   // added : 
@@ -31,4 +32,12 @@ export class NavbarComponent {
     // Toggle Rotation
     this.isRotated = !this.isRotated;
   }
+
+  get logoImgSrc(): string {
+    const currentTheme = document.documentElement.getAttribute('data-theme');
+    return currentTheme === 'light'
+      ? 'assets/images/magnus-node-package-logo-for-light-theme.jpg'
+      : 'assets/images/magnus-node-package-logo-for-dark-theme.jpg';
+  }
+
 }

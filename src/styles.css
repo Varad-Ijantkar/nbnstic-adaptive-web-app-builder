@@ -39,6 +39,7 @@ body {
 
     /* navbar */
     --nav-bar-background-color: #f3f3f3;
+    --nav-bar-background-color: #F8F9FA;
     --nav-bar-shadow-color: #6c6c6c;
     --nav-bar-bottom-box-color: #2A79C4;
     --nav-bar-text-color: #212121;
@@ -63,12 +64,12 @@ body {
 [data-theme="dark"] {
 
     /* headbar */
-    --head-bar-background-color: #282828;
+    --head-bar-background-color: #1F1F1F;
     --head-bar-text-highlight-color: #2A79C4;
     --head-bar-text-color: #dcdcdc;
 
     /* navbar */
-    --nav-bar-background-color: #282828;
+    --nav-bar-background-color: #1F1F1F;
     --nav-bar-shadow-color: #4c4c4c;
     --nav-bar-bottom-box-color: #676767;
     --nav-bar-text-color: #dcdcdc;

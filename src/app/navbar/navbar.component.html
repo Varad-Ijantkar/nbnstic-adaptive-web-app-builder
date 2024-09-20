@@ -4,7 +4,14 @@
         <div class="start_block">
             <div class="logo">
                 <a href="">
-                    <img class="logo_img" src="assets/images/RA_logo.png" alt="Company Logo">
+                    <!-- <img class="logo_img" src="assets/images/magnus-node-package-logo-for-light-theme.jpg">  -->
+                    <!-- <img class="logo_img"
+                        [src]=" data-theme === 'light' ? 'assets/images/magnus-node-package-logo-for-light-theme.jpg' : 'assets/images/magnus-node-package-logo-for-dark-theme.svg'"
+                        alt="Company Logo"> -->
+                    <!-- <img class="logo_img"
+                        [src]=" data-theme === 'light' ? 'assets/images/magnus-node-package-logo-for-light-theme.jpg' : 'assets/images/magnus-node-package-logo-for-dark-theme.svg'"
+                        alt="Company Logo"> -->
+                    <img class="logo_img" [src]="logoImgSrc" alt="Company Logo">
                     <!-- fill="var(--nav-bar-text-color)" -->
                 </a>
             </div>
